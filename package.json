@@ -1,0 +1,32 @@
+{
+  "name": "my-zenn-articles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "zenn preview",
+    "new:article": "zenn new:article",
+    "new:book": "zenn new:book",
+    "lint": "if [ -n \"$(find articles books -name '*.md' 2>/dev/null)\" ]; then textlint \"articles/**/*.md\" \"books/**/*.md\"; else echo 'No markdown files to lint.'; fi",
+    "lint:fix": "if [ -n \"$(find articles books -name '*.md' 2>/dev/null)\" ]; then textlint --fix \"articles/**/*.md\" \"books/**/*.md\"; else echo 'No markdown files to lint.'; fi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/haribote/my-zenn-articles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/haribote/my-zenn-articles/issues"
+  },
+  "homepage": "https://github.com/haribote/my-zenn-articles#readme",
+  "dependencies": {
+    "zenn-cli": "^0.4.8"
+  },
+  "devDependencies": {
+    "textlint": "^15.7.1",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2"
+  }
+}

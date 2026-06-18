@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [":"]
+      },
+      "sentence-length": false,
+      "no-exclamation-question-mark": false
+    }
+  }
+}
